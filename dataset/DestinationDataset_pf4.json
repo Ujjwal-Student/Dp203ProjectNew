@@ -1,0 +1,57 @@
+{
+	"name": "DestinationDataset_pf4",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "sale_id",
+				"type": "varchar"
+			},
+			{
+				"name": "product_id",
+				"type": "varchar"
+			},
+			{
+				"name": "product_name",
+				"type": "varchar"
+			},
+			{
+				"name": "quantity",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "varchar"
+			},
+			{
+				"name": "total_amount",
+				"type": "varchar"
+			},
+			{
+				"name": "sale_date",
+				"type": "varchar"
+			},
+			{
+				"name": "region",
+				"type": "varchar"
+			},
+			{
+				"name": "Clean_Date",
+				"type": "varchar"
+			},
+			{
+				"name": "Year_Date",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CapstoneOutputData"
+		},
+		"sqlPool": {
+			"referenceName": "dedicatedsqlcapstone",
+			"type": "SqlPoolReference"
+		}
+	}
+}
