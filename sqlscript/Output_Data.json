@@ -1,0 +1,17 @@
+{
+	"name": "Output_Data",
+	"properties": {
+		"content": {
+			"query": "SET ANSI_NULLS ON\nGO\nSET QUOTED_IDENTIFIER ON\nGO\n-- run it thrice with name change of CSV to Json, Parquet\nCREATE TABLE [dbo].[CapstoneOutputData]\n( \n\t[sale_id] [varchar](50)  NOT NULL,\n\t[product_id] [varchar](50)  NULL,\n\t[product_name] [varchar](200)  NULL,\n\t[quantity] [varchar](50)  NULL,\n\t[price] [varchar](50)  NULL,\n\t[total_amount] [varchar](50)  NULL,\n\t[sale_date] [varchar](50)  NULL,\n\t[region] [varchar](50)  NULL,\n    [Clean_Date] [VARCHAR](50) NULL,\n    [Year_Date] [VARCHAR](50) NULL\n)\nWITH\n(\n\tDISTRIBUTION = HASH ( [sale_id] ),\n\tCLUSTERED COLUMNSTORE INDEX\n)\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dedicatedsqlcapstone",
+				"poolName": "dedicatedsqlcapstone"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
